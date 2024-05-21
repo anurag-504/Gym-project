@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anu Fitness</title>
+    <link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+</head>
+<style>
+    body{
+        font-family: 'Baloo Bhai';
+        color: white;
+        margin-right: 0px;
+        padding: 0px;
+        background: url('https://cdn.pixabay.com/photo/2016/11/19/12/43/barbell-1839086_960_720.jpg');
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    .left{
+        /* border: 2px solid red; */
+        display: inline-block;
+        position: absolute;
+        width: 85px;
+        top: 9px;
+        left: 47px;
+    }
+    .mid{
+        display: block;
+        width: 42%;
+        margin: 0px auto;
+        /* border: 1px solid rgb(136, 245, 47); */
+    }
+    .right{
+        /* border: 2px solid rgb(240, 205, 7); */
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        right: 15px;
+    }
+    .navbar{
+
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 19px;
+    }
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 35px 25px;
+    }
+    .navbar li a:hover, .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(252, 6, 6);
+    }
+    .left img {
+      padding: 0px 8px;
+        width: 65px;
+        filter: invert(100%);
+    }
+   
+    .left div {
+        text-align: center;
+        padding-bottom: 7px;
+        line-height: 0px;
+        font-size: 5px;
+    }
+    .btn{
+        font-family: 'Baloo Bhai';
+        background-color: black;
+        color: white;
+        margin: 0px 10px;
+        padding: 3px 21px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .btn:hover{
+        background-color: rgb(97, 95, 95);
+        border-radius: 15px;
+    }
+    .container{
+        border: 2px solid white;
+        margin: 130px 56px;
+        padding:50px 16px;
+        width: 33%;
+        border-radius: 15px;
+    }
+    h1{
+        text-align: center;
+        margin-top: -34px;
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        margin: 8px auto ;
+        padding: 3px;
+        width: 275px;
+        border:1px solid black;
+        font-size: 14px;
+        border-radius: 5px;
+    }
+    .container button{
+        display: block;
+        margin: auto;
+        width: 286px;
+        border-radius: 5px;
+    }
+</style>
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/oo.png" alt="">
+            <div>Anu Fitness</div>
+        </div>
+        <div class="mid">
+        <ul class="navbar">
+            <li><a href="" class="active">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Track Activity</a></li>
+            <li><a href="">Address</a></li>
+        </ul>
+        </div>
+        <div class="right">
+        <button class="btn">Call Us</button>
+        <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Fill this form to join us</h1>
+        <form action="action.php">
+            <div class="form-group">
+                <input type="text" name="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="name" placeholder="Enter your email id" required>
+            </div>
+            <div class="form-group">
+                <input type="number" name="name" placeholder="Enter your mobile" required>
+            </div>
+            
+            
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
